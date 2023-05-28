@@ -1,0 +1,100 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.page {
+  position: relative;
+  padding: 23rem  22rem;
+}
+
+#background  img{
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+}
+
+#holes {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5.4rem;
+}
+
+.hole {
+  width: 222px;
+  height: 172px;
+}
+
+#holes .hole img {
+  position: relative;
+}
+
+.hole:nth-child(1) {
+  animation: toupeira 300ms 100ms forwards;
+}
+
+.hole:nth-child(2) {
+  animation: toupeira 300ms 6000ms forwards; 
+}
+
+.hole:nth-child(3) {
+  animation: toupeira 300ms 7500ms forwards; 
+}
+
+.hole:nth-child(4) {
+  animation: toupeira 300ms 12000ms forwards; 
+}
+
+.hole:nth-child(5) {
+  animation: toupeira 300ms 3000ms forwards; 
+}
+.hole:nth-child(6) {
+  animation: toupeira 300ms 13500ms forwards; 
+}
+.hole:nth-child(7) {
+  animation: toupeira 300ms 16500ms forwards; 
+}
+.hole:nth-child(8) {
+  animation: toupeira 300ms 9000ms forwards; 
+}
+.hole:nth-child(9) {
+  animation: toupeira 300ms 4500ms forwards; 
+}
+.hole:nth-child(10) {
+  animation: toupeira 300ms 1500ms forwards; 
+}
+.hole:nth-child(11) {
+  animation: toupeira 300ms 10500ms forwards; 
+}
+.hole:nth-child(12) {
+  animation: toupeira 300ms 15000ms forwards; 
+}
+
+@keyframes toupeira {
+  0% {
+    background-image: url(./images/toupeira1.svg);
+  }
+  15% {
+    background-image: url(./images/toupeira2.svg);
+  }
+  30% {
+    background-image: url(./images/toupeira3.svg);
+  }
+  60% {
+    background-image: url(./images/toupeira4.svg);
+  }
+  80% {
+    background-image: url(./images/toupeira5.svg);
+  }
+  100% {
+    background-image: url(./images/toupeira6.svg);
+  }
+}
